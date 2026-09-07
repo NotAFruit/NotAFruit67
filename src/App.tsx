@@ -60,7 +60,7 @@ export default function App() {
           hour: '2-digit',
           minute: '2-digit',
           hour12: false,
-          timeZone: 'UTC',
+          timeZone: 'Etc/GMT+6',
         }).format(new Date()),
       );
     };
@@ -141,7 +141,7 @@ export default function App() {
           </a>
           <p className="clock">
             <Clock3 aria-hidden="true" />
-            {utcTime || '00:00'} UTC
+            {utcTime || '00:00'} GMT-6
           </p>
         </header>
 
