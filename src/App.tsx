@@ -61,7 +61,7 @@ export default function App() {
           hour: '2-digit',
           minute: '2-digit',
           hour12: false,
-          timeZone: 'Etc/GMT+7',
+          timeZone: 'Etc/GMT+5',
         }).format(new Date()),
       );
     };
