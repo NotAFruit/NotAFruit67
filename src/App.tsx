@@ -1,6 +1,7 @@
 import { ArrowUpRight, Clock3, Gamepad2, Volume2, VolumeX } from 'lucide-react';
 import { SiDiscord, SiRoblox, SiSpotify, SiSteam } from 'react-icons/si';
 import { useEffect, useMemo, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const DISCORD_ID = '578744735116689418';
 const SONG_ID = 'R4VvNn1NS7Y';
@@ -125,6 +126,7 @@ export default function App() {
 
   return (
     <main className="site-shell">
+      <Analytics />
       {musicOn && (
         <iframe
           className="song-frame"
