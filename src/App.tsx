@@ -143,7 +143,7 @@ export default function App() {
           </a>
           <p className="clock">
             <Clock3 aria-hidden="true" />
-            {utcTime || '00:00'} GMT-6
+            {utcTime || '00:00'}
           </p>
         </header>
 
